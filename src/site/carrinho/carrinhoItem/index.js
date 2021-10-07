@@ -10,17 +10,13 @@ import { Container, RemoverIcon } from './styled'
 
 
 export default function CarrinhoItem(props) {
-  // Carrega a Variável de Estado com o parâmetro recebido da tela Carrinho
   const [produto, setProduto] = useState(props.info);
 
   
 
 
   function alterarQtd(qtd) {
-    // Atualiza a variável de Estado
-    setProduto({...produto, qtd });
-
-    // Chama componente PAI para atualizar Cookie
+    setProduto({produto, qtd });
     props.onUpdate(produto.id, qtd)
   }
 
