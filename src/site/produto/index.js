@@ -4,7 +4,7 @@ import { Container } from './styled'
 
 
 
-export default function Produto(props) {
+export default function Produto (props) {
   return (
     <Container>
       <img className="capa" src={props.info.imagem} alt="" />
@@ -12,7 +12,7 @@ export default function Produto(props) {
       <div className="preco"> {props.info.preco} </div>
         
       <Link to={{
-        pathname: '/detalhe',
+        pathname: "/detalhe",
         state: props.info
       }}>
         <button> Ver Detalhes </button>   

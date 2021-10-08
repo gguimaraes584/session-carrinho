@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 import Contador from '../contador'
@@ -9,7 +8,7 @@ export default function CarrinhoItem(props) {
   const [produto, setProduto] = useState(props.info);
 
   function alterarQtd(qtd) {
-    setProduto({produto, qtd });
+    setProduto({...produto, qtd });
     props.onUpdate(produto.id, qtd)
   }
 
