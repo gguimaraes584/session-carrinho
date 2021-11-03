@@ -33,7 +33,7 @@ export default function CarrinhoItem(props) {
       </div>
       
       <div className="preco"> 
-        <span>Preço unitário</span> <br /> 
+        <span>Preço </span> <br /> 
         {produto.preco} 
       </div>
 
